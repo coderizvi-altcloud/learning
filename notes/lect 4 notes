@@ -1,0 +1,32 @@
+in route app.get adding the response_model
+what is does that each data which get passed through it will be checked
+and valiated by pydantic
+
+reponse model act as a safeguard and helps prevent accidently data whihc should not be used to show
+
+in this lect we learn to create schemas which are like set of rules which tell us
+and tally the data entered and check whether it is correct or not
+
+also it hides the info which is not mentioned to show to the user
+
+
+it by defaults validates the data
+
+
+for this we use pydantic
+
+pydantic has basemodel which is used to create the basescheme
+whicn can be later inherited by the other models
+
+
+then there are models like response_model and which are used in decorators
+
+and the postcreate a model for creating it is passed as an agrument in the function
+which checks all the processsed info
+
+
+now data is to be given to the api
+but api does not store any data of its own
+for that reason database is used
+
+
