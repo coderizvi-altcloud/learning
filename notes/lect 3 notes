@@ -1,0 +1,68 @@
+path parameters
+in this lect we will learn about them
+
+they are variables that are parts of the url paths
+they can be passed as an argument for us in the path
+
+and can be used to grab a specific values
+
+so here post_id is going to be the path parameter
+then it will be passed as an argument inside the function as an int
+
+then we will perform some function on it
+
+now we will return the post through the post id
+
+
+but later we will learn about the practice of sending errors on the api
+
+
+we are getting normally 200 status code
+but we need to callibrate them properly
+so that the other people can understand how to handle response so we need new status codes and all
+
+
+for that we will import httpexception to handle erros and status give http status codes
+which makes our code more readable
+
+
+so to return error we will use raise exception then the status_code = status.++++ fir rest of the code
+
+not everyone knows 404 code so we use status.status
+and pass out details so to know why the error is occuring
+
+this will give a json detail not found in a json text
+
+there are certain error like 422
+which is builtin
+
+
+first we made a post api endpoint which will be used in api as an endpoint
+
+then we made a html endpoint which uses post and displays data in the frontend
+
+
+
+#exception handling
+doing exception depends on what request are we doing whehter they are for frontned or backend
+
+first lets do it for html
+
+
+
+we have jsonresponse
+we have requestvalidationerror that is used like when we need int but someone passes hello
+we have httpexception from starlette now the reason for this the fastapi is built on the starlette
+and user goes to routte that does not exist its actually starlette that shows the error
+that internal error is starlette error
+
+if we only caught fastapi exception then we can miss other error from starlette thats why
+
+
+
+exception handling
+
+@app.exception_handler() this will runt he given funct inside them whenever the exception is raised
+
+
+so there are two types of error
